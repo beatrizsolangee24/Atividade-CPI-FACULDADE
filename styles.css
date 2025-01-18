@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+   
+}
+
+section{
+
+
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background-color: #7c7c7c;
+
+}
+
+nav{
+    width: 30%;
+    height: 450px ;
+    background-color: #f5f3f3;
+    float: left;
+
+
+}
+
+main{
+    width: 55%;
+    height: 450px;
+    background-color: #fff;
+    float: left;/*Quando eu coloco todos pra o left, eles ficam um do lado do outro*/
+
+}
+aside{
+    width: 15%;
+    height: 450px;
+    background-color: #c4c4c4;
+    float: left;
+
+}
+
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #212121;
+    clear: both; /*ele vai ignorar os elementos antes dele (os três)*/
+
+
+}
+/* CONTEÚDO */
+
+nav, main, aside {
+    padding:  20px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+ul{
+    list-style-type: none;
+
+}
+li{
+    margin-bottom: 0.5em;
+
+}
+p{
+    text-align: justify;
+    margin: 1em 0;
+}
+
+div{
+    width: 100%;
+    height: 100px;
+    background-color: #56ccf2;
+    margin: 10px;
+}
+
+/* MOBILE */
+
+/*TO USANDO MEDIA QUERY : O media query é uma funcionalidade do CSS que permite criar estilos adaptáveis (responsivos) com base em características do dispositivo, como largura da tela, altura, resolução, orientação, entre outros. Ele é fundamental para designs responsivos, pois permite que o layout se ajuste a diferentes tamanhos de tela, como smartphones, tablets e desktops*/
+@media screen and (max-width: 390px) {
+    nav, main, aside{
+        width: 100%;
+
+
+    }
+    nav{
+        height: 60px;
+    }
+
+    ul{
+        display: flex;/*elementos dentro do container aparecem lado a lado*/
+        justify-content:space-between;
+    }
+    main{
+        font-size:1.2em;
+    }
+    aside{
+        height: 170px;
+        display:flex;
+        font-size: 1.2em;
+
+    }
+}
